@@ -19,37 +19,40 @@
         <li><a href="projetos.html">PROJETOS</a></li>
         </ul>
     </nav>
-    <main id="conteudo"> 
-        <h1>Algoritmos Básicos que ja usei para praticar</h1>
-        
-        
-        <div class="simple-algorithm">
-            <h3>1. Soma de Dois Números</h3>
-            <pre><code>function somar(a, b) {
-            return a + b;
-            }</code></pre>
-        </div>
-        
-        <div class="simple-algorithm">
-            <h3>2. Verificar se Número é Par</h3>
-            <pre><code>function ehPar(num) {
-            return num % 2 === 0;
-            }</code></pre>
-            <p>Uso: <code>ehPar(4)</code> retorna <code>true</code></p>
-        </div>
-        <div class="simple-algorithm">
-            <h3>3. Encontrar o Maior Número</h3>
-            <pre><code>function maiorNumero(a, b) {
-            if (a > b) {
-            return a;
-            } else {
-            return b;
-            }
-            }</code></pre>
-            <p>Uso: <code>maiorNumero(7, 3)</code> retorna <code>7</code></p>
-        </div>
+<section id="algoritmos">
+  <h2>Algoritmos Básicos</h2>
+  
+  <!-- Algoritmo 1 - Soma Simples -->
+  <div class="algoritmo">
+    <h3>1. Calculadora de Soma</h3>
+    <pre><code>function somar(a, b) {
+  return a + b;
+}</code></pre>
+    
+    <div class="demo">
+      <input type="number" id="num1" placeholder="Número 1" class="input-algo">
+      <span>+</span>
+      <input type="number" id="num2" placeholder="Número 2" class="input-algo">
+      <button onclick="calcularSoma()" class="btn-algo">Calcular</button>
+      <p>Resultado: <span id="resultadoSoma">0</span></p>
+    </div>
+  </div>
+
+  <!-- Algoritmo 2 - Verificar Par -->
+  <div class="algoritmo">
+    <h3>2. Verificar Número Par</h3>
+    <pre><code>function ehPar(num) {
+  return num % 2 === 0;
+}</code></pre>
+    
+    <div class="demo">
+      <input type="number" id="numeroPar" placeholder="Digite um número" class="input-algo">
+      <button onclick="verificarPar()" class="btn-algo">Verificar</button>
+      <p id="resultadoPar"></p>
+    </div>
+  </div>
+  </section>
         <h2>Esses sao os algoritmos que eu tenho anotado que ja fiz para Praticar</h2>
-        
     </main>
     
    <script src="script.js"></script>
