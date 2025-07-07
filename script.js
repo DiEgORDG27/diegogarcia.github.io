@@ -23,3 +23,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+// Funções dos algoritmos
+function somar(a, b) { return a + b; }
+function ehPar(num) { return num % 2 === 0; }
+
+// Funções para demonstrar
+function calcularSoma() {
+  const a = Number(document.getElementById('num1').value);
+  const b = Number(document.getElementById('num2').value);
+  document.getElementById('resultadoSoma').textContent = somar(a, b);
+}
+
+function verificarPar() {
+  const num = Number(document.getElementById('numeroPar').value);
+  const resultado = ehPar(num) ? "É PAR" : "É ÍMPAR";
+  document.getElementById('resultadoPar').textContent = resultado;
+}
